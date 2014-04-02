@@ -1,0 +1,16 @@
+%h1= t '.last_logins'
+
+.row
+  .col-md-5
+    %table.table
+      %thead
+        %tr
+          %th= t '.ip'
+          %th= t '.time'
+      %tbody
+        - current_user.logins.reverse.each do |login|
+          %tr
+            %td
+              = login.sign_in_ip
+            %td
+              = login.sign_in_at.strftime('%a, %e %B %Y, %H:%M:%S %z')

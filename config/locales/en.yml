@@ -1,0 +1,25 @@
+en:
+  devise:
+    registrations:
+      new:
+        sign_up: Sign up
+    sessions:
+      new:
+        email: Email
+        password: Password
+        login: Log in
+
+  home:
+    index:
+      hello: Hello! :)
+      prompt: You can view your last logins <a href='%{logins_path}' class='dot'>here</a>
+    logins:
+      last_logins: Last logins
+      ip: IP
+      time: Time
+
+  layouts:
+    top_nav:
+      last_logins: Last logins
+      sign_out: Sign out
+      sign_up: Sign up
